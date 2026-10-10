@@ -13,7 +13,7 @@ public class VowelCount {
 			char ch = input.charAt(i);
 			if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
 				count++;
-			}	
+			}
 		}
 		System.out.println("the vowels are : " + count);
 		sc.close();

@@ -12,11 +12,11 @@ class ArrayTraversal {
 public class ArrayBiggestElement {
 
 	public static void main(String[] args) {
-		ArrayTraversal t1 = new ArrayTraversal(10);
-		ArrayTraversal t2 = new ArrayTraversal(25);
-		ArrayTraversal t3 = new ArrayTraversal(7);
-		ArrayTraversal t4 = new ArrayTraversal(40);
-		ArrayTraversal t5 = new ArrayTraversal(15);
+		ArrayTraversal t1 = new ArrayTraversal(-5);
+		ArrayTraversal t2 = new ArrayTraversal(-6);
+		ArrayTraversal t3 = new ArrayTraversal(-2);
+		ArrayTraversal t4 = new ArrayTraversal(-5);
+		ArrayTraversal t5 = new ArrayTraversal(-9);
 
 		ArrayTraversal[] integers = new ArrayTraversal[5];
 		integers[0] = t1;
