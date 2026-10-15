@@ -32,7 +32,8 @@ public class SecondLargest {
 			if (largest < current) {
 				secondLargest = largest;
 				largest = current;
-			} else if (largest > current && !foundSecondLargest || current > secondLargest) {
+				foundSecondLargest = true;
+			} else if (largest > current && (!foundSecondLargest || current > secondLargest)) {
 
 				secondLargest = current;
 				foundSecondLargest = true;

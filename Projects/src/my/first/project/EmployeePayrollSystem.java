@@ -37,7 +37,7 @@ class Employee1 {
 		if (bonus < 0) {
 			return;
 		}
-		System.out.println("BONUS !! : " + calculateBonus());
+		System.out.println("BONUS !! : " + bonus);
 
 	}
 }
@@ -45,8 +45,9 @@ class Employee1 {
 class PermanentEmployee extends Employee1 {
 	int benefits;
 
-	PermanentEmployee(int benefits, String _employeeName, int _employeeId, int _salary, int _experience) {
+	PermanentEmployee(int _benefits, String _employeeName, int _employeeId, int _salary, int _experience) {
 		super(_employeeId, _employeeName, _salary, _experience);
+		this.benefits = _benefits;
 	}
 
 	public int calculateTotalCompensation() {
@@ -65,8 +66,8 @@ public class EmployeePayrollSystem {
 		Employee1 t1 = new Employee1(483738, "Dushyant", 100000, 5);
 		Employee1 t2 = new Employee1(483738, "jatin", 100000, 5);
 		Employee1 t3 = new Employee1(483738, "Abhay", 100000, 5);
-		PermanentEmployee t4 = new PermanentEmployee(7000,"Bhanu",483738,  100000, 5);
-		PermanentEmployee t5 = new PermanentEmployee(7000,"Aniket",483738,  100000, 5);
+		PermanentEmployee t4 = new PermanentEmployee(7000, "Bhanu", 483738, 100000, 5);
+		PermanentEmployee t5 = new PermanentEmployee(7000, "Aniket", 483738, 100000, 5);
 
 		Employee1[] employee = new Employee1[5];
 		employee[0] = t1;

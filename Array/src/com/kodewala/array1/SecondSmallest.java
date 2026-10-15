@@ -1,4 +1,5 @@
 package com.kodewala.array1;
+
 class ArrayTraversal4 {
 	int numbers;
 
@@ -8,7 +9,7 @@ class ArrayTraversal4 {
 	}
 }
 
-public class SecondSmallest  {
+public class SecondSmallest {
 
 	public static void main(String[] args) {
 		ArrayTraversal4 t1 = new ArrayTraversal4(-5);
@@ -25,16 +26,17 @@ public class SecondSmallest  {
 		integers[4] = t5;
 		int smallest = integers[0].numbers;
 		int secondSmallest = 0;
-		boolean foundSecondLargest = false;
+		boolean foundSecondSmallest = false;
 		for (int i = 1; i < integers.length; i++) {
 			int current = integers[i].numbers;
 			if (smallest > current) {
 				secondSmallest = smallest;
 				smallest = current;
-			} else if (smallest < current && !foundSecondLargest || current < secondSmallest) {
+				foundSecondSmallest = true;
+			} else if (smallest < current && (!foundSecondSmallest || current < secondSmallest)) {
 
 				secondSmallest = current;
-				foundSecondLargest = true;
+				foundSecondSmallest = true;
 			}
 		}
 		System.out.println(smallest);
@@ -42,6 +44,3 @@ public class SecondSmallest  {
 	}
 
 }
-
-
-
